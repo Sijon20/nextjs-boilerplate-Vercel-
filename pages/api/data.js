@@ -1,6 +1,5 @@
 // import * as fs from 'node:fs';
 import fs from 'node:fs'
-import { json } from 'stream/consumers'
 import test from './data/test.json' assert { type: 'JSON' };
 // export default function handler(req, res) {
 //     // let data1;
