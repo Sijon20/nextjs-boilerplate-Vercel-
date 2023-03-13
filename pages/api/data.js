@@ -1,6 +1,6 @@
 // import * as fs from 'node:fs';
 import fs from 'node:fs'
-import test from '../data/test.json'
+import test from './test.json'
 // export default function handler(req, res) {
 //     // let data1;
 //     // fs.readdir('../../data',utf-8, (err, data) => {
