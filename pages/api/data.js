@@ -16,5 +16,5 @@ export default function handler(req, res) {
     if(err){console.log(err)}
     data=data;
   })
-  res.status(200).json({test})
+  res.status(200).json(data)
 }
