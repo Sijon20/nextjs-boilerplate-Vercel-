@@ -1,6 +1,6 @@
 // import * as fs from 'node:fs';
 import fs from 'node:fs'
-import test from './data/test.json' assert { type: 'JSON' };
+// import test from './data/test.json' assert { type: 'JSON' };
 // export default function handler(req, res) {
 //     // let data1;
 //     // fs.readdir('../../data',utf-8, (err, data) => {
@@ -11,5 +11,10 @@ import test from './data/test.json' assert { type: 'JSON' };
 //   }
   
 export default function handler(req, res) {
+  let data ;
+    fs.readFileSync('./data/test.json','utf-8',(err,data)=>{
+    if(err){console.log(err)}
+    data=data;
+  })
   res.status(200).json({test})
 }
