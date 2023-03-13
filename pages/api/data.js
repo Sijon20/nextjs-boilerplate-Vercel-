@@ -11,10 +11,16 @@ import fs from 'node:fs'
 //   }
   
 export default function handler(req, res) {
-  let data ;
-    fs.readFileSync('./data/test.json','utf-8',(err,data)=>{
-    if(err){console.log(err)}
-    data=data;
-  })
-  res.status(200).json(data)
+  // let data ;
+  //   fs.readFileSync('./data/test.json','utf-8',(err,data)=>{
+  //   if(err){console.log(err)}
+  //   data=data;
+  // })
+  res.status(200).json({
+    "employees":[
+        {"firstName":"John", "lastName":"Doe"},
+        {"firstName":"Anna", "lastName":"Smith"},
+        {"firstName":"Peter", "lastName":"Jones"}
+    ]
+    })
 }
